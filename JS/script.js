@@ -1,10 +1,12 @@
 /*========TOGGLE ICON NAVBAR========*/
-let menuIcon = document.querySelector('.#menu-icon');
-let navbar = document.querySelector('.navbar');
+if (typeof document !== 'undefined') {
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
 
-manuIcon.onclick = () => {
+menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+     };
 };
  
 

@@ -420,7 +420,7 @@ span {
     .navbar a {
         display: block;
         font-size: 2rem;
-        margin: 3rem
+        margin: 3rem 0;
     }
 }
 
