@@ -1,6 +1,16 @@
+/*========TOGGLE ICON NAVBAR========*/
+let menuIcon = document.querySelector('.#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+manuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
+ 
+
 /*========SCROll SECTIONS AVTIVE LINK========*/
 let sections = document.querySelectorAll('section');
-let navLinks = domcument.querySelectorAll('header nav a');
+let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -17,4 +27,10 @@ window.onscroll = () => {
             });
         };
     });
+    /*========STICKY NAVBAR========*/
+    let header = document.querySelector('header');
+
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+
 };
