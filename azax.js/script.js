@@ -11,6 +11,7 @@ menuIcon.onclick = () => {
  
 
 /*========SCROll SECTIONS AVTIVE LINK========*/
+
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -29,7 +30,9 @@ window.onscroll = () => {
             });
         };
     });
+    
     /*========STICKY NAVBAR========*/
+
     let header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.scrollY > 100);
